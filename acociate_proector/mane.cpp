@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<string>
 #include<set>
 #include<map>
@@ -31,11 +31,11 @@ void main()
 	}
 	cout << endl;
 	int value;
-	/*cout << "Введите добавляемое значение: "; cin >> value;*/
+	/*cout << "Р’РІРµРґРёС‚Рµ РґРѕР±Р°РІР»СЏРµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ: "; cin >> value;*/
 	/*set1.insert(set1.end(),value);*/
 	set1.insert({ 3,5,8,13,21,34,55,89 });
 	for (int i : set1)cout << i << tab; cout << endl;
-	cout << "Введите удаляемое значение: "; cin >> value;
+	cout << "Р’РІРµРґРёС‚Рµ СѓРґР°Р»СЏРµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ: "; cin >> value;
 	set1.erase(value);
 	for (int i : set1)cout << i << tab; cout << endl;
 #endif // STL_SET
@@ -62,13 +62,13 @@ void main()
 
 	std::map<std::string, std::list<std::string>>dictionary =
 	{
-		pair<std::string, std::list<std::string>>("1.Getsu-yobi", std::list<std::string>{"Понидельник"}),
-		pair<std::string, std::list<std::string>>("2.Ka-yobi", std::list<std::string>{"Вторник" }),
-		pair<std::string, std::list<std::string>>("3.Sui-yobi", std::list<std::string>{"Среда"}),
-		pair<std::string, std::list<std::string>>("4.Moku-yobi", std::list<std::string>{"Четверг"}),
-		pair<std::string, std::list<std::string>>("5.Kin-yobi", std::list<std::string>{"Пятница"}),
-		pair<std::string, std::list<std::string>>("6.Do-yobi", std::list<std::string>{"Суббота"}),
-		pair<std::string, std::list<std::string>>("7.Nichi-yobi", std::list<std::string>{"Воскресение"})
+		pair<std::string, std::list<std::string>>("1.Getsu-yobi", std::list<std::string>{"РџРѕРЅРёРґРµР»СЊРЅРёРє"}),
+		pair<std::string, std::list<std::string>>("2.Ka-yobi", std::list<std::string>{"Р’С‚РѕСЂРЅРёРє" }),
+		pair<std::string, std::list<std::string>>("3.Sui-yobi", std::list<std::string>{"РЎСЂРµРґР°"}),
+		pair<std::string, std::list<std::string>>("4.Moku-yobi", std::list<std::string>{"Р§РµС‚РІРµСЂРі"}),
+		pair<std::string, std::list<std::string>>("5.Kin-yobi", std::list<std::string>{"РџСЏС‚РЅРёС†Р°"}),
+		pair<std::string, std::list<std::string>>("6.Do-yobi", std::list<std::string>{"РЎСѓР±Р±РѕС‚Р°"}),
+		pair<std::string, std::list<std::string>>("7.Nichi-yobi", std::list<std::string>{"Р’РѕСЃРєСЂРµСЃРµРЅРёРµ"})
 	};
 	for (std::map<std::string, std::list<std::string>>::iterator it = dictionary.begin(); it != dictionary.end(); ++it)
 	{
