@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include<string>
 #include<conio.h>
 #include<map>
@@ -11,11 +11,11 @@ using std::endl;
 
 const std::map<int, std::string>& crimes =
 {
-    std::pair<int, std::string>(1, "привышение скорости"),
-    std::pair<int, std::string>(2, "проезд на красный"),
-    std::pair<int, std::string>(3, "парковка в неположенном месте"),
-    std::pair<int, std::string>(4, "оскорбление офицера"),
-    std::pair<int, std::string>(5, "пересечение сплошной линии")
+    std::pair<int, std::string>(1, "РїСЂРёРІС‹С€РµРЅРёРµ СЃРєРѕСЂРѕСЃС‚Рё"),
+    std::pair<int, std::string>(2, "РїСЂРѕРµР·Рґ РЅР° РєСЂР°СЃРЅС‹Р№"),
+    std::pair<int, std::string>(3, "РїР°СЂРєРѕРІРєР° РІ РЅРµРїРѕР»РѕР¶РµРЅРЅРѕРј РјРµСЃС‚Рµ"),
+    std::pair<int, std::string>(4, "РѕСЃРєРѕСЂР±Р»РµРЅРёРµ РѕС„РёС†РµСЂР°"),
+    std::pair<int, std::string>(5, "РїРµСЂРµСЃРµС‡РµРЅРёРµ СЃРїР»РѕС€РЅРѕР№ Р»РёРЅРёРё")
 };//Advanced
 
 class Crime
@@ -96,21 +96,21 @@ void main()
     SetConsoleOutputCP(1251);
     std::map<std::string, std::list<Crime>>base /*=
          {
-             std::pair<std::string, std::list<Crime>>("в666ад", std::list<Crime>{Crime(4, "Ул. Пушкина"), Crime(3,"ул. Ленина")}),
-             std::pair<std::string, std::list<Crime>>("г777ад", std::list<Crime>{Crime(1, "Ул. Кирова"), Crime(5,"ул. Ленина")}),
-             std::pair<std::string, std::list<Crime>>("у365ка", std::list<Crime>{Crime(2, "Ул. Адова")}),
+             std::pair<std::string, std::list<Crime>>("РІ666Р°Рґ", std::list<Crime>{Crime(4, "РЈР». РџСѓС€РєРёРЅР°"), Crime(3,"СѓР». Р›РµРЅРёРЅР°")}),
+             std::pair<std::string, std::list<Crime>>("Рі777Р°Рґ", std::list<Crime>{Crime(1, "РЈР». РљРёСЂРѕРІР°"), Crime(5,"СѓР». Р›РµРЅРёРЅР°")}),
+             std::pair<std::string, std::list<Crime>>("Сѓ365РєР°", std::list<Crime>{Crime(2, "РЈР». РђРґРѕРІР°")}),
          }*/;
    // load(base);
 
-    //for (std::list<Crime>::iterator it = base["в666ад"].begin(); it != base["в666ад"].end(); ++it)
+    //for (std::list<Crime>::iterator it = base["РІ666Р°Рґ"].begin(); it != base["РІ666Р°Рґ"].end(); ++it)
     //{
     //    cout << *it << endl;
     //}
 
     /*std::string licence_plate;
     Crime crime;
-    cout << "Введите номер автомобиля: "; cin >> licence_plate;
-    cout << "Введите правонарушение: "; cin >> crime;
+    cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р°РІС‚РѕРјРѕР±РёР»СЏ: "; cin >> licence_plate;
+    cout << "Р’РІРµРґРёС‚Рµ РїСЂР°РІРѕРЅР°СЂСѓС€РµРЅРёРµ: "; cin >> crime;
     base[licence_plate].push_back(crime);*/
   // print(base);
    //save(base);
@@ -119,11 +119,11 @@ void main()
     do
     {
         system("CLS");
-        cout << "Выберите действие: " << endl;
-        cout << "1. Загрузить базу: " << endl;
-        cout << "2. Сохранитьбазу: " << endl;
-        cout << "3. Вывести базу: " << endl;
-        cout << "4. Добавить запись: " << endl;
+        cout << "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ: " << endl;
+        cout << "1. Р—Р°РіСЂСѓР·РёС‚СЊ Р±Р°Р·Сѓ: " << endl;
+        cout << "2. РЎРѕС…СЂР°РЅРёС‚СЊР±Р°Р·Сѓ: " << endl;
+        cout << "3. Р’С‹РІРµСЃС‚Рё Р±Р°Р·Сѓ: " << endl;
+        cout << "4. Р”РѕР±Р°РІРёС‚СЊ Р·Р°РїРёСЃСЊ: " << endl;
         action = _getch();
         cout << action << endl;
         switch (action)
@@ -135,8 +135,8 @@ void main()
         {
             std::string licence_plate;
             Crime crime;
-            cout << "Введите номер автомобиля: "; cin >> licence_plate;
-            cout << "Введите правонарушение: "; cin >> crime;
+            cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р°РІС‚РѕРјРѕР±РёР»СЏ: "; cin >> licence_plate;
+            cout << "Р’РІРµРґРёС‚Рµ РїСЂР°РІРѕРЅР°СЂСѓС€РµРЅРёРµ: "; cin >> crime;
             base[licence_plate].push_back(crime);
         }
         break;
@@ -167,7 +167,7 @@ void save (const std::map<std::string, std::list<Crime>>& base)
         {
             fout << *l_it << ", ";
         }
-        fout.seekp(-2, std::ios_base::cur);//сдвигаем курсор на два символа в лево относительно текущей позиции
+        fout.seekp(-2, std::ios_base::cur);//СЃРґРІРёРіР°РµРј РєСѓСЂСЃРѕСЂ РЅР° РґРІР° СЃРёРјРІРѕР»Р° РІ Р»РµРІРѕ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ С‚РµРєСѓС‰РµР№ РїРѕР·РёС†РёРё
         fout << "; \n";
     }
     fout.close();
